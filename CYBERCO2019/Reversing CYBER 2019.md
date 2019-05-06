@@ -28,6 +28,7 @@ Esto deja la posibilidad de millones de llaves , las cuales cumplan con la regla
 
 para esto una division smple no dice que el valor mas cercano y rapido seria 1337/12=111.41 aproximando por reduccion 111 que equivale a "o" , esto nos permite pensar en una mascara "mask" similar a "oooooooooooo" , a continucion probamos iterando apartir de la mascara y comparamos valores:
 
+#### suma.py
 ```python
 import sys
 for linea in sys.stdin:
