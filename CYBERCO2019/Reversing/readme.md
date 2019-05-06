@@ -7,6 +7,7 @@ Nos entregan un binario elf de 32 bits
 ![caracteristicas metodo1](2019-05-06_07-35.png "caracteristicas metodo1")
 
 Realizando un analisis del binario con una herramienta de reversing como radare2 encontramos en la funcion "main" lo siguiente:
+Se realiza una comparacion de un codigo de acceso a un dato o variable estatica.
 
 ![funcion main](2019-05-06_07-28.png "funcion main")
 
@@ -26,7 +27,7 @@ Analizando con una herramienta de reversing como radare2 :
 
 Esto deja la posibilidad de millones de llaves , las cuales cumplan con la regla de sumar sus valores ascii sean igual a 1337 y solo tengan 12 digitos:
 
-para esto una division smple no dice que el valor mas cercano y rapido seria 1337/12=111.41 aproximando por reduccion 111 que equivale a "o" , esto nos permite pensar en una mascara "mask" similar a "oooooooooooo" , a continucion probamos iterando apartir de la mascara y comparamos valores:
+para esto una division simple no dice que el valor mas cercano y rapido seria 1337/12=111.41 aproximando por reduccion 111 que equivale a "o" , esto nos permite pensar en una mascara "mask" similar a "oooooooooooo" , a continuación probamos iterando apartir de la mascara y comparamos valores:
 
 #### suma.py
 ```python
